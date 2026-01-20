@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11ElevenLabs-ContactSales-Clone</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="flex sm:flex-row flex-col">
+    <div
+      class="flex flex-col border-2 border-black h-auto sm:h-screen sm:w-[51%] text-white bg-[rgb(28,28,28)] select-none justify-between"
+    >
+      <div class="flex flex-col sm:m-10 m-5">
+        <a href="https://elevenlabs.io/"> 11ElevenLabs</a>
+        <h1 class="bold text-4xl mt-7 my-3">Contact our sales team</h1>
+        <ul
+          class="flex flex-col gap-3 sm:text-[16px] text-xs font-normal justify-start items-start"
+        >
+          <li>
+            <img src="li-1.svg" class="inline-block w-4 h-4" />
+            <span>Customer pricing and elevated concureency</span>
+          </li>
+          <li>
+            <img src="li-2.svg" class="inline-block w-4 h-4" />
+            <span>
+              Enterprise grade Security including SOC II, GDPR and HIPAA
+              compliance
+            </span>
+          </li>
+
+          <li>
+            <img src="li-3.svg" class="inline-block w-4 h-4" />
+            <span>Enterprise support and SLA's</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col justify-start sm:mx-10 mx-5">
+        <p class="text-gray-400 text-xs">
+          Trusted by 10,000+ leading companies.
+        </p>
+        <div class="flex flex-wrap justify-around gap-2 my-5">
+          <img src="logo-1.svg" class="sm:w-15 sm:h-15 w-20 h-20" /><img
+            src="logo-2.svg"
+            class="sm:w-15 sm:h-15 w-20 h-20"
+          /><img src="logo-3.svg" class="sm:w-15 sm:h-15 w-20 h-20" /><img
+            src="logo-4.svg"
+            class="sm:w-15 sm:h-15 w-20 h-20"
+          /><img src="logo-5.svg" class="sm:w-15 sm:h-15 w-20 h-20" />
+        </div>
+        <div class="flex items-center flex-row my-5">
+          <i class="fa-regular fa-star text-xs"></i>
+          <i class="fa-regular fa-star text-xs"></i>
+          <i class="fa-regular fa-star text-xs"></i>
+          <i class="fa-regular fa-star text-xs"></i>
+          <i class="fa-regular fa-star text-xs"></i>
+          <p class="mx-2 text-sm">4.5 stars and 1,059+ reviews.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-full sm:w-[49%] flex justify-center items-center select-none">
+      <form class="w-2/3 my-8 sm:my-auto p-2">
+        <div>
+          <h2 class="text-3xl">Contact Sales form</h2>
+          <p class="text-sm text-[rgb(110,110,110)] my-2">
+            Please fill out the form below to get started.
+          </p>
+        </div>
+
+        <div>
+          <label for="101" class="my-3 text-xs">Company's website</label>
+          <input
+            placeholder="elevenlabs.io"
+            title="please fill out this field"
+            type="website"
+            id="101"
+            class="my-2 h-7 w-[95%] p-3 py-4 rounded text-sm outline-1 outline-gray-400 focus:border-1 focus:border-black"
+            required
+          />
+          <label for="102" class="my-2 text-xs">Business email</label>
+          <input
+            placeholder="example@elevenlabs.io"
+            title="please fill out this field"
+            type="email"
+            id="102"
+            class="my-2 h-7 w-[95%] p-3 py-4 rounded text-sm outline-1 outline-gray-400 focus:border-gray-800 focus:border-1 border-hidden focus:border-solid"
+            required
+          />
+        </div>
+        <div
+          class="flex flex-row mt-8 justify-end sm:justify-start items-center"
+        >
+          <button
+            class="bg-[rgb(110,110,110)] p-3 rounded-3xl h-7 text-white flex justify-center items-center text-xs"
+          >
+            Next
+          </button>
+          <div class="flex justify-center gap-2 ml-auto">
+            <div class="hidden h-1 w-12 sm:inline-block bg-black rounded"></div>
+            <div
+              class="hidden h-1 w-12 sm:inline-block bg-[rgb(110,110,110)] rounded"
+            ></div>
+            <div
+              class="hidden h-1 w-12 sm:inline-block bg-[rgb(110,110,110)] rounded"
+            ></div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
