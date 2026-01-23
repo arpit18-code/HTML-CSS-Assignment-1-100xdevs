@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>100xdevs</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <nav
+      class="flex justify-between p-5 px-4 items-center border border-b border-gray-200"
+    >
+      <div class="flex gap-8 text-[rgb(0,25,89)] text-md items-center">
+        <a
+          class="font-bold text-xl tracking-tighter cursor-pointer text-[#1f1f1f]"
+          href="https://100xdevs.com/"
+          >100<span class="text-red-600">x</span>Devs</a
+        >
+        <a
+          href="https://100xdevs.com/"
+          class="hover:text-gray-700 cursor-pointer"
+          >Home</a
+        >
+        <a
+          href="https://100xdevs.com/new-courses"
+          class="hover:text-gray-700 cursor-pointer"
+          >Courses</a
+        >
+        <a
+          href="https://100xdevs.com/store"
+          class="hover:text-gray-700 cursor-pointer"
+          >Store</a
+        >
+      </div>
+      <div class="flex items-center gap-2">
+        <div
+          class="flex gap-2 items-center p-2 border-2 border-gray-200 rounded-lg focus-within:border-gray-400 focus-within:shadow-md transition-shadow-duration-200"
+        >
+          <img src="images/search.svg" class="h-5 w-5" />
+          <input
+            type="text"
+            placeholder="Type to search"
+            class="border-none outline-none text-sm h-5"
+          />
+        </div>
+        <button
+          class="border text-sm border-gray-400 p-2 rounded-lg bg-background hover:bg-gray-200/90 cursor-pointer font-medium text-[rgb(7,25,70)] px-6"
+        >
+          Sign up
+        </button>
+        <button
+          class="text-white bg-[rgb(0,25,89)] border-2 text-sm p-2 rounded-lg bg-background cursor-pointer font-medium hover:bg-[rgb(3,39,130)] px-6"
+        >
+          Log in
+        </button>
+      </div>
+    </nav>
+    <div class="min-h-screen h-full bg-gray-50 py-8">
+      <div class="flex flex-col gap-6 py-8 px-6 lg:px-8">
+        <section
+          class="grid grid-cols-1 sm:grid-cols-2 gap-12 justify-between w-full"
+        >
+          <div
+            class="flex flex-col gap-y-3 items-center sm:items-start text-center sm:text-start"
+          >
+            <div
+              class="w-fit p-1 border border-gray-500 text-black flex items-center rounded-xl border-dashed justify-center px-2"
+            >
+              <div class="bg-[#10B0A7] h-3 w-3 rounded-full mx-auto"></div>
+              <span class="mx-2 text-sm"
+                >Join 100,000+ enrolled students today</span
+              >
+            </div>
+            <h1
+              class="text-[rgb(0,25,89)] text-4xl sm:text-5xl lg:text-7xl text-auto font-semibold"
+            >
+              Master Full Stack developement
+            </h1>
+            <p class="text-[#4D667F]">
+              Master Full Stack developement through hands on open-source
+              projects. Join a community of developers transforming their
+              careers with practical, real world programming skills.
+            </p>
+            <div class="flex justify-start gap-2 items-center">
+              <button
+                class="border text-md border-gray-400 p-2 rounded-lg bg-background hover:bg-gray-200/90 cursor-pointer font-medium text-[rgb(7,25,70)] h-10 sm:h-12 inline-flex items-center w-auto"
+              >
+                Learn more
+              </button>
+              <a
+                href="https://100xdevs.com/new-courses"
+                class="text-white bg-[rgb(0,25,89)] border-2 text-md p-2 rounded-lg bg-background cursor-pointer font-medium hover:bg-[rgb(3,39,130)] h-10 sm:h-12 inline-flex items-center w-auto"
+                >Explore Courses</a
+              >
+            </div>
+          </div>
+          <div class="relative w-full h-full flex items-end justify-end">
+            <img src="images/hero-section-img.webp" alt="hero image" />
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
