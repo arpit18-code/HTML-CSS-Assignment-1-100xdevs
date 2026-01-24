@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>100xdevs</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <nav
-      class="flex justify-between p-5 px-4 items-center border border-b border-gray-200"
+      class="flex justify-between p-5 px-4 items-center border-b border-gray-200"
     >
       <div class="flex gap-8 text-[rgb(0,25,89)] text-md items-center">
         <a
@@ -18,21 +25,21 @@
         >
         <a
           href="https://100xdevs.com/"
-          class="hover:text-gray-700 cursor-pointer"
+          class="hover:text-gray-700 cursor-pointer hidden lg:inline-block"
           >Home</a
         >
         <a
           href="https://100xdevs.com/new-courses"
-          class="hover:text-gray-700 cursor-pointer"
+          class="hover:text-gray-700 cursor-pointer hidden lg:inline-block"
           >Courses</a
         >
         <a
           href="https://100xdevs.com/store"
-          class="hover:text-gray-700 cursor-pointer"
+          class="hover:text-gray-700 cursor-pointer hidden lg:inline-block"
           >Store</a
         >
       </div>
-      <div class="flex items-center gap-2">
+      <div class="items-center gap-2 hidden lg:flex">
         <div
           class="flex gap-2 items-center p-2 border-2 border-gray-200 rounded-lg focus-within:border-gray-400 focus-within:shadow-md transition-shadow-duration-200"
         >
@@ -53,6 +60,82 @@
         >
           Log in
         </button>
+      </div>
+
+      <!-- STATE -->
+      <input type="checkbox" id="menu-toggle" class="hidden peer" />
+
+      <!-- BUTTON -->
+      <label
+        for="menu-toggle"
+        class="lg:hidden bg-[rgb(0,25,89)] border-2 text-sm p-2 rounded-lg cursor-pointer font-medium hover:bg-[rgb(3,39,130)] text-white inline-flex items-center"
+      >
+        <i class="fa-solid fa-bars text-md"></i>
+      </label>
+
+      <!-- SIDEBAR -->
+      <div
+        class="fixed top-0 right-0 w-full h-full flex flex-col border border-gray-200 p-5 gap-6 bg-white z-10 lg:hidden transform translate-x-full transition-transform duration-300 ease-in-out peer-checked:translate-x-0"
+      >
+        <div
+          class="flex justify-between text-[rgb(0,25,89)] text-md items-center border-b border-gray-200 pb-5"
+        >
+          <a
+            class="font-bold text-xl tracking-tighter cursor-pointer text-[#1f1f1f]"
+            href="https://100xdevs.com/"
+            >100<span class="text-red-600">x</span>Devs</a
+          >
+
+          <label
+            for="menu-toggle"
+            class="lg:hidden bg-[rgb(0,25,89)] border-2 text-sm p-2 rounded-lg cursor-pointer font-medium hover:bg-[rgb(3,39,130)] text-white inline-flex items-center"
+          >
+            <i class="fa-regular fa-circle-xmark"></i>
+          </label>
+        </div>
+
+        <div class="flex flex-col px-3 sm:px-6 gap-6 h-full">
+          <div class="flex flex-col gap-3 text-lg text-[rgb(0,25,89)]">
+            <div
+              class="flex gap-2 items-center p-2 border-2 border-gray-200 rounded-lg focus-within:border-gray-400 focus-within:shadow-md transition-shadow-duration-200"
+            >
+              <img src="images/search.svg" class="h-5 w-5" />
+              <input
+                type="text"
+                placeholder="Type to search"
+                class="border-none outline-none text-sm h-5"
+              />
+            </div>
+            <a
+              href="https://100xdevs.com/"
+              class="hover:text-gray-700 cursor-pointer bg-gray-200/50 rounded-2xl px-3 py-2"
+              >Home</a
+            >
+            <a
+              href="https://100xdevs.com/new-courses"
+              class="hover:text-gray-700 cursor-pointer bg-gray-200/50 rounded-2xl px-3 py-2"
+              >Courses</a
+            >
+            <a
+              href="https://100xdevs.com/store"
+              class="hover:text-gray-700 cursor-pointer bg-gray-200/50 rounded-2xl px-3 py-2"
+              >Store</a
+            >
+          </div>
+
+          <div class="flex flex-col gap-3 px-3 py-2">
+            <button
+              class="border text-sm border-gray-400 p-2 rounded-lg bg-background hover:bg-gray-200/90 cursor-pointer font-medium text-[rgb(7,25,70)] px-6"
+            >
+              Sign up
+            </button>
+            <button
+              class="text-white bg-[rgb(0,25,89)] border-2 text-sm p-2 rounded-lg bg-background cursor-pointer font-medium hover:bg-[rgb(3,39,130)] px-6"
+            >
+              Log in
+            </button>
+          </div>
+        </div>
       </div>
     </nav>
     <div class="min-h-screen h-full bg-gray-50 py-8">
